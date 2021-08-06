@@ -17,7 +17,6 @@ export const useLocalStorage = (storedKeyName, initialValue) => {
     const valueStoreChar = value instanceof Function ? value() : value;
     localStorage.setItem(storedKeyName, JSON.stringify(valueStoreChar));
     setCharValue(valueStoreChar);
-    console.log('location', valueStoreChar);
   };
 
   return [value, setValue];
