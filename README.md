@@ -1,5 +1,8 @@
 ## HAFTA 4 - ÖDEV
 
+[Live Preview](https://bootcamp-emreckmk-board-game.netlify.app/)
+uygulama kodları **easy-board-game** klasorü altındadır.
+
 # React mix example
 
 - Bu proje tamamen ReactJS kullanılarak yapılacaktır.
@@ -9,7 +12,7 @@ Ne istiyoruz?
 
 - Ekranda 500px X 500px boyutunda köşe renkleri olan bir alan (oyun tahtasi) oluşturun.
 - Bir karakter component'i oluşturun. Bu karakter 20px x 20px bir kare de olabilir sizin göstermek istediginiz bir image da olabilir.
-- Uygulama acildiginda karakterimiz bu oyun tahtasinda yukari, asagi, sag, sol ok tuslariyla hareket edebilsin istiyoruz. 
+- Uygulama acildiginda karakterimiz bu oyun tahtasinda yukari, asagi, sag, sol ok tuslariyla hareket edebilsin istiyoruz.
 - Space tusuna basili tutulursa karakterin hareket etme hızı iki katına çıkmalı.
 - Sayfa yenilenirse karakter kaldigi yerden devam etmeli.
 - Karakter oyun tahtasindan cikamamali.
@@ -18,9 +21,8 @@ Ne istiyoruz?
 - Uygulamayı tamamen React hooks ile yapmayı deneyin. Kendi hooklarinizi yazmakta cekinmeyin.
 - Olabildigince duzenli kod yazmayi deneyin. Birden cok component olusturun.
 - Istediginiz bir ESLint kuralini takip edin.
-- Opsiyonel olarak uygulamanızı vercel, netlify v.b bir servise deploy edin ve linki readme dosyaniza ekleyin. 
+- Opsiyonel olarak uygulamanızı vercel, netlify v.b bir servise deploy edin ve linki readme dosyaniza ekleyin.
 - Arkadaslarinizla discord uzerinden code-review yapin. En az 1 kere! Yazdiginiz kodlari karsilikli olarak nasil daha iyi hale getirebilirsiniz buna bakin.
-
 
 Daha iyi anlasilmasi icin ornek resimler.
 (Burada mario ve kare karakterleri yukari, asagi, sag, sol ok tuslariyla hareket edebiliyor. )
