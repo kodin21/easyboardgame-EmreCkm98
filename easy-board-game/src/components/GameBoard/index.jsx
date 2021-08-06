@@ -25,13 +25,14 @@ const Board = () => {
           margin: '50px',
         }}
       >
+        <img src={Images.Treasure} alt="treasure" />
         <CharsDropdown />
         <div
           style={{
             width: '500px',
             height: '500px',
             border: '5px;solid;black',
-            margin: '50px',
+            margin: '10px',
             backgroundImage: `url(${Images.GameMap})`,
             backgroundSize: '500px 500px',
           }}

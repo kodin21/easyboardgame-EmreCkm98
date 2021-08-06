@@ -15,7 +15,7 @@ export const charactersArray = [
     src: Witcher,
   },
   {
-    name: 'Ninja',
+    name: 'Samuray',
     src: Knight,
   },
 ];

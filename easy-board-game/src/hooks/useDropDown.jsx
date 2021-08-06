@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useLocalStorage } from './useLocalStorage';
 
 export const useDropdown = (label, characters) => {
@@ -13,7 +13,7 @@ export const useDropdown = (label, characters) => {
     return (
       <div>
         <label
-          style={{ fontSize: '2rem', color: '#2b2d42' }}
+          style={{ fontSize: '2rem', color: '#FFFAF0' }}
           htmlFor="character"
         >
           {label}
@@ -26,8 +26,9 @@ export const useDropdown = (label, characters) => {
               width: '200px',
               background: 'lightblue',
               color: '#382D1A',
-              appearance: 'none',
+              appearance: 'meter',
               padding: 'auto 15px',
+              textAlignLast: 'center',
               ...props.styles,
             }}
             name="character"
