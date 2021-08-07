@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocalStorage } from './useLocalStorage';
 
 const KeyboardSettings = {
@@ -11,10 +11,10 @@ const KeyboardSettings = {
 };
 
 export const useArrowKeys = (maxHeight, maxWidth) => {
-  const [char, setChar] = useLocalStorage('location', { top: 0, left: 0 }); //localstoragea adımları kaydetme işlemi
+  const [char, setChar] = useLocalStorage('location', { top: 370, left: 380 });
+  //localstoragea adımları kaydetme işlemi----karakter başlangıç pozisyonu
   const [speed, setSpeed] = useState(false);
   let speedStatus;
-
   // ok tuşlarıyla hareket işlemleri
   const handleArrowKeydown = (e) => {
     speedStatus = speed ? 20 : 10;
@@ -75,13 +75,7 @@ export const useArrowKeys = (maxHeight, maxWidth) => {
   const handleSpaceKeydown = (e) => {
     if (parseInt(e.keyCode) === KeyboardSettings.SPACE_KEY) {
       //space tuşu basılınca hızı arttırma işlemi
-      setSpeed(true);
-    }
-  };
-
-  const handleSpaceKeyup = (e) => {
-    if (parseInt(e.keyCode) === KeyboardSettings.SPACE_KEY) {
-      setSpeed(false);
+      setSpeed(!speed);
     }
   };
 
@@ -89,11 +83,8 @@ export const useArrowKeys = (maxHeight, maxWidth) => {
   useEffect(() => {
     document.addEventListener('keydown', handleArrowKeydown);
     document.addEventListener('keydown', handleSpaceKeydown);
-    document.addEventListener('keyup', handleSpaceKeyup);
     return () => {
       document.removeEventListener('keydown', handleArrowKeydown);
-      document.removeEventListener('keydown', handleSpaceKeydown);
-      document.removeEventListener('keyup', handleSpaceKeyup);
     };
   }, [char, speed]);
 

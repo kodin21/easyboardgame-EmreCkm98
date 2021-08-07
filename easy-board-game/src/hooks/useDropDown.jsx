@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocalStorage } from './useLocalStorage';
 
-export const useDropdown = (label, characters) => {
+export const useDropdown = (characters) => {
   const [localChar, setLocalChar] = useLocalStorage(
     //localstorageye kaydetme
     'character',
@@ -16,8 +16,7 @@ export const useDropdown = (label, characters) => {
           style={{ fontSize: '2rem', color: '#FFFAF0' }}
           htmlFor="character"
         >
-          {label}
-          {': '}
+          {'Karakter seçiniz : '}
           <select
             style={{
               cursor: 'pointer',
