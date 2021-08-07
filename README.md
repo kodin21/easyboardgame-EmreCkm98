@@ -1,6 +1,6 @@
 ## HAFTA 4 - ÖDEV
 
-[Live Preview](https://bootcamp-emreckmk-board-game.netlify.app/)
+[Live Preview](https://bootcamp-emreckmk-country-app.netlify.app/)
 uygulama kodları **easy-board-game** klasorü altındadır.
 
 # React mix example
